@@ -10,7 +10,7 @@ module.exports = {
   ],
   overrides: [],
   parserOptions: {
-    project: ['./tsconfig.json'],
+    project: ['./client/tsconfig.json'],
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
@@ -20,7 +20,10 @@ module.exports = {
       'warn',
       {
         singleQuote: true,
+        tsxSingleQuote: true,
+        jsxSingleQuote: true,
         semi: true,
+        parser: 'flow',
       },
     ],
   },
