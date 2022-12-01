@@ -10,15 +10,17 @@ import {
 import SearchField from './components/SearchField';
 
 const Navbar: React.FC = () => (
-  <div className='flex justify-between items-center py-5 space-x-8 px-layout'>
-    <div className='text-primary font-bold text-4xl'>SocialM</div>
-    <div className='flex justify-between content-center w-[32rem] h-fit'>
-      <HomeIcon className='h-6 text-primary' />
-      <UserGroupIcon className='h-6 text-gray-500' />
-      <BriefcaseIcon className='h-6 text-gray-500' />
-      <BellIcon className='h-6 text-gray-500' />
-      <ChatBubbleOvalLeftEllipsisIcon className='h-6 text-gray-500' />
-      <UserIcon className='h-6 text-gray-500' />
+  <div className='flex justify-between items-center py-5 space-x-8 px-layout top-0 shadow-md w-[100%] overflow-hidden bg-white fixed'>
+    <div className='text-primary font-bold text-4xl cursor-pointer'>
+      SocialM
+    </div>
+    <div className='flex justify-between content-center w-[32rem] h-6 text-gray-500'>
+      <HomeIcon className='text-primary' />
+      <UserGroupIcon />
+      <BriefcaseIcon />
+      <BellIcon />
+      <ChatBubbleOvalLeftEllipsisIcon />
+      <UserIcon />
     </div>
     <SearchField />
   </div>
