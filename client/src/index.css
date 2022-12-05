@@ -2,3 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
+.card {
+  @apply bg-white rounded-[18px] px-[28px] py-[18px];
+}
